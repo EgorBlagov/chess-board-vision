@@ -63,7 +63,6 @@ const pauseStore = usePause();
   opacity: 0%;
 }
 
-
 .v-enter-active {
   transition: opacity 2s ease;
 }

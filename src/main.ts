@@ -59,7 +59,6 @@ function getNextTarget(previous: Point | null): Point {
       } else {
         weights.push(weight);
       }
-
     }
   }
   return randomChoose(items, weights);
