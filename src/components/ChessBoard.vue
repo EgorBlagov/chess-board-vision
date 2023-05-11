@@ -20,7 +20,7 @@ const pauseStore = usePause();
       <div
         :key="target.code"
         class="code"
-        :class="{ white: target.isWhite, 'hide-code': pauseStore.isHovered }"
+        :class="{ white: target.isWhite}"
       >
         <div>{{ target.code }}</div>
       </div>
@@ -57,10 +57,6 @@ const pauseStore = usePause();
   font-size: 10em;
   font-weight: 900;
   opacity: 0;
-}
-
-.hide-code {
-  opacity: 0%;
 }
 
 .v-enter-active {

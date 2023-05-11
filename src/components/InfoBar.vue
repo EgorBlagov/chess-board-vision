@@ -47,13 +47,12 @@ const targetStore = useTargetStore();
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  font-size: 2em;
+  font-size: 5vmin;
   width: 100%;
 }
 
 .header {
-  font-size: 1.5em;
-  font-weight: 900;
+  font-size: 5vmin;
 }
 
 .filler {
@@ -74,7 +73,6 @@ const targetStore = useTargetStore();
 }
 
 .target-code {
-  /* padding: 0.2em; */
   font-weight: 900;
 }
 .time {
