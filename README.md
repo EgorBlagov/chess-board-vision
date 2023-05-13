@@ -2,6 +2,8 @@
 
 Micro web app to practice chess board vision
 
+https://egorblagov.github.io/chess-board-vision/
+
 ## Project Setup
 
 ```sh
