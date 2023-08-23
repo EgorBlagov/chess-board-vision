@@ -5,7 +5,6 @@ import { BOARD_SIZE } from './stores/stores';
 </script>
 
 <template>
-  <main>
     <div class="container">
       <div class="child-container">
         <InfoBar />
@@ -14,7 +13,6 @@ import { BOARD_SIZE } from './stores/stores';
         </div>
       </div>
     </div>
-  </main>
 </template>
 
 <style scoped>
@@ -25,15 +23,18 @@ import { BOARD_SIZE } from './stores/stores';
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  flex-direction: column;
 }
 
 .child-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 }
 .board-square {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   height: 80vmin;
+  width: 80vmin;
 }
 </style>
