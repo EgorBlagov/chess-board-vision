@@ -130,7 +130,6 @@ function timeNow() {
   return (Date.now() - rootTime) / 1000;
 }
 
-
 export const useTimer = defineStore('timerStore', () => {
   const timeHandler = ref<number | null>(null);
   const startedTime = ref<number | null>(null);
@@ -229,7 +228,7 @@ export const useBoardClickStore = defineStore('boardClickStore', () => {
 
 export const useTargetStore = defineStore('targetStore', () => {
   const isWhite = ref(true);
-  const target = ref(new Point(0,0));
+  const target = ref(new Point(0, 0));
 
   function toggle() {
     isWhite.value = !isWhite.value;
@@ -241,5 +240,5 @@ export const useTargetStore = defineStore('targetStore', () => {
     target.value = point;
   }
 
-  return {isWhite, toggle, code, setTarget}
+  return { isWhite, toggle, code, setTarget };
 });
